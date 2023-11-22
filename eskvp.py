@@ -182,6 +182,8 @@ for komponent in dfx.komponent.unique():
                                             hide_index=True,
                                             key=f"data_editor_{i_key}")
             i_key += 1
+            if i_key > 50:
+                st.stop()
 
 
 def to_excel(df, cols_rocniky):
